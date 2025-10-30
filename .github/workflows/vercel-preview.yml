@@ -12,6 +12,7 @@ on:
 
 jobs:
   deploy:
+    if: secrets.VERCEL_TOKEN
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
